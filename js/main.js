@@ -70,11 +70,11 @@ let i = 0;
 let animals = ['🐔', '🐷', '🐑', '🐇'];
 let names = ['Gertrude', 'Henry', 'Melvin', 'Billy Bob'];
 
-let xxx=0;
+let xxx = 0;
 for (let wartosc of animals) {
     // wartosc = { wartosc: names };
     animals[wartosc] = names[xxx];
-    xxx+=1;
+    xxx += 1;
 }
 
 console.log(animals);
@@ -89,5 +89,23 @@ for (let animal of animals) {
 
 for (const value of animals) {
     let i = animals.indexOf(value);
-    console,log(`${value} Nazwa tego zwierzecia to: ${names[i]}`)
+    console, log(`${value} Nazwa tego zwierzecia to: ${names[i]}`)
+}
+
+
+
+// function showMessage (default....)
+
+// int sum = (a, b) => {return a + b};
+
+let sayHi = () => alert("Hello!");
+
+min(a, b)
+{
+    return a < b ? a : b;
+}
+
+let z = (x, n) => pow(x, n)
+{
+    return Math.pow(x, n);
 }
