@@ -109,3 +109,5 @@ let z = (x, n) => pow(x, n)
 {
     return Math.pow(x, n);
 }
+
+const currentDate = new Date();
