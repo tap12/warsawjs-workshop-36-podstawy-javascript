@@ -13,3 +13,18 @@ export function createMainContainer() {
     container.classList.add('main');
     return container;
 }
+
+// window.addEventListener('DOMContentLoaded', main);
+
+// // let button = window.appendChild(button);
+
+// app.appendChild(button);
+
+
+export function createButton() {
+    const button = document.createElement("input");
+    button.type = "type";
+    button.value = "sound";
+    button.classList.add("btn");
+    return button;
+}
