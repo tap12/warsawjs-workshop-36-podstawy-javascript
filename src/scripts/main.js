@@ -1,22 +1,48 @@
-  
-import '../styles/main.scss';
 
-import { createLogo, createMainContainer, createButton } from './ui';
+// import '../styles/main.scss';
 
-function main() {
-    const app = document.getElementById('root');
+// import { createLogo, createMainContainer, createButton } from './ui';
 
-    const logo = createLogo();
-    app.appendChild(logo);
+// function main() {
+//     const app = document.getElementById('root');
 
-    const container = createMainContainer();
-    app.appendChild(container);
+//     const logo = createLogo();
+//     app.appendChild(logo);
 
-    const button = createButton();
-    container.appendChild(button);
+//     const container = createMainContainer();
+//     app.appendChild(container);
 
-    switchSound();
+//     const button = createButton();
+//     container.appendChild(button);
 
-}
+//     switchSound();
 
-window.addEventListener('DOMContentLoaded', main);
+// }
+
+
+// window.addEventListener('DOMContentLoaded', main);
+
+
+
+
+const h4 = document.getElementById('root');
+
+var section1 = document.createElement("section");
+section1.className = "card";
+
+const h2 = document.createElement("h2");
+h2.className = "card__header";
+
+h4.appendChild(section1);
+section1.appendChild(h2);
+h2.innerText = "{title}";
+
+const p = document.createElement("p");
+p.className = "card__header-description";
+p.innerText = "{opening_crawl}";
+
+h4.appendChild(p);
+{/* <section class='card'>
+    <h2 class='card__header'>{title}</h2>
+    <p class="card__header-description">{opening_crawl}</p>
+</section> */}
