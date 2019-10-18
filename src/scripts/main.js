@@ -42,6 +42,21 @@ p.className = "card__header-description";
 p.innerText = "{opening_crawl}";
 
 h4.appendChild(p);
+
+// const url = 'https://swapi.co/api/films/';
+async function makeRequest(url) {
+    const response = await fetch(url);
+    return response.json();
+}
+
+async function main() {
+    const url = 'https://swapi.co/api/films/';
+    const response = await makeRequest(url);
+    console.log({ response });
+}
+
+main().catch(err => console.error(err));
+
 {/* <section class='card'>
     <h2 class='card__header'>{title}</h2>
     <p class="card__header-description">{opening_crawl}</p>
